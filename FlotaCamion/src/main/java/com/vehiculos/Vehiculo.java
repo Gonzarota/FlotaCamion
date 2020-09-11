@@ -16,6 +16,7 @@ public class Vehiculo {
     Constantes.Licencia licencia;
     int maxPaquetes;
 
+
     public Vehiculo(Conductor conductor, Ruta ruta, List<Paquete> paquetes, Constantes.Licencia licencia, int maxPaquetes) {
 
         this.conductor=conductor;
@@ -36,5 +37,13 @@ public class Vehiculo {
 
             }
         }
+    }
+
+    public List<Paquete> getPaquetes() {
+        return paquetes;
+    }
+
+    public int getNumeroPaquetes(){
+        return paquetes.size();
     }
 }
